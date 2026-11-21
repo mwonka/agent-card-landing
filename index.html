@@ -599,9 +599,7 @@
         openFull.removeAttribute('aria-disabled');
         openFull.textContent = 'Open full screen';
       };
-      fetch('prototype/index.html', { method: 'GET' })
-        .then((r) => { if (r.ok) showLive(); else showPh(); })
-        .catch(showPh);
+      showLive();
     })();
   </script>
 </body>
